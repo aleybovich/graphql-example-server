@@ -1,0 +1,9 @@
+language: node_js
+node_js:
+  - "12.22.5"
+install:
+  - yarn install
+script:
+  - yarn run lint
+  - yarn test
+  - yarn run func-test

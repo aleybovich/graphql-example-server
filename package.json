@@ -1,0 +1,51 @@
+{
+  "name": "graphql-example-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": "^12"
+  },
+  "scripts": {
+    "test": "jest ./test",
+    "lint": "eslint .",
+    "func-test": "./func-test/run.sh",
+    "coverage": "jest --coverage && open coverage/lcov-report/index.html",
+    "start:appdev": "nodemon index.js",
+    "start:app": "pm2 -s start index.js",
+    "start:db": "pm2 -s start database.js",
+    "start:all": "yarn run start:db && yarn run start:app",
+    "stop:all": "pm2 -s stop all"
+  },
+  "author": "Andrey Leybovich",
+  "license": "ISC",
+  "keywords": [
+    "graphql",
+    "apollo",
+    "apollo-server",
+    "nodejs",
+    "mongodb"
+  ],
+  "dependencies": {
+    "axios": "^0.21.1",
+    "apollo-datasource": "^3.1.0",
+    "apollo-datasource-rest": "^3.2.0",
+    "apollo-server-express": "3.3.0",
+    "dataloader": "^2.0.0",
+    "express": "4.17.1",
+    "graphql": "^15.5.2",
+    "mongodb": "4.1.1",
+    "mongodb-memory-server": "7.3.6",
+    "mongodb-memory-server-core": "7.3.6",
+    "mongodb-memory-server-global": "7.3.6"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-jest": "^24.4.0",
+    "jest": "^27.1.0",
+    "nodemon": "^2.0.12",
+    "pm2": "^5.1.1"
+  }
+}
