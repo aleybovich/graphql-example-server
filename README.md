@@ -1,4 +1,4 @@
-# GraphQL server example [![Build Status](https://app.travis-ci.com/aleybovich/graphql-example.svg?branch=main)](https://app.travis-ci.com/aleybovich/graphql-example)
+# GraphQL server example [![Build Status](https://app.travis-ci.com/aleybovich/graphql-example-server.svg?branch=main)](https://app.travis-ci.com/aleybovich/graphql-example-server)
 
 
 ## Local development
